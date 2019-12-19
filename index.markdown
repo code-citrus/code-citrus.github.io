@@ -8,7 +8,7 @@ layout: default
 # Projects
 
 ## [Landing Page]()
-This here webpage. Embracing JAMStack! This site is built using Jekyll and
+This webpage embraces JAMStack! It is built using Jekyll and
 deployed through github pages.
 
 ### Skills
@@ -17,8 +17,9 @@ deployed through github pages.
 
 ## [The Wright Company](http://gauthamg.com/wrightco)
 This was a project for a CourseEra course on Bootstrap.
-The idea was to create a website the Wright Brothers might have had
-if internet was a thing in the early 1900s.
+I wanted to create a webpage that could be used by the
+Wright Brothers during the early 1900s had the internet
+actually existed.
 
 ### Notes
 - *CI/CD*: When code is pushed, a CircleCI job is created to 
