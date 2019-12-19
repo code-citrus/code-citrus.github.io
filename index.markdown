@@ -4,3 +4,38 @@
 
 layout: default
 ---
+
+# Projects
+
+## [Landing Page]()
+This here webpage. Embracing JAMStack! This site is built using Jekyll and
+deployed through github pages.
+
+### Skills
+- Jekyll
+- Github Pages
+
+## [The Wright Company](http://gauthamg.com/wrightco)
+This was a project for a CourseEra course on Bootstrap.
+The idea was to create a website the Wright Brothers might have had
+if internet was a thing in the early 1900s.
+
+### Notes
+- *CI/CD*: When code is pushed, a CircleCI job is created to 
+  pull the code into a docker container and build the site 
+  using webpack. The output is a static html site deployed
+  to the same github repo but on the github-pages branch.
+
+- *Design*: I used a fixed header and footer to frame each section
+  of scrollable content. The content itself was divided into small
+  and concise tidbits. 
+
+- *Design*: Used scrolling content with CSS scroll snapping so
+  that the content will tend to stop scrolling at predefined
+  points.
+
+### Skills Learned
+- Boostrap 4 - Basic layouts, headers, and esponive design
+- CI/CD w/ CircleCI & GitHub Pages
+- Webpack
+
