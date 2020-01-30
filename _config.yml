@@ -32,7 +32,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  code-citrus
 
 # Build settings
-theme: jekyll-theme-minimal
 logo: /assets/img/logo.jpg
 plugins:
   - jekyll-feed
