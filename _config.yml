@@ -20,9 +20,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  code-citrus
 
 # -- Build settings -- #
+
+# If you are using sass @import statements, you must ensure
+# the sass/sass_dir configuration options is set to the base
+# directory that contains your scss files to be imported. You
+# can also use sass/load_paths for multiple directories.
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
 logo: /assets/img/logo.jpg
+
 plugins:
   - jekyll-feed
+
+# 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
