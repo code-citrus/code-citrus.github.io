@@ -39,16 +39,12 @@ main {
     right: unquote('min(50%, 150px)');
     width: 100%;
     */
-    right: 150px;
-    width: 300px; 
-    border: 10px solid white;
-    overflow: hidden;
-}
-
-#frame:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+    right: 100px;
+    width: 300px;
+    /* todo: only md height: 300px */;
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    overflow: scroll;
 }
 
 #frame-content-row {
