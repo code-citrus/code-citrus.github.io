@@ -49,6 +49,9 @@ main {
     color: black;
     right: 0;
     bottom: 10%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
     
     a {
         display: block;
@@ -62,5 +65,9 @@ main {
     a.linkedin {
         background: #007bb5;
         color: white;
+    }
+
+    a.medium {
+        background: #E8F3EC;
     }
 }
