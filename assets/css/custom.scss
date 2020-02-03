@@ -16,19 +16,16 @@ $body-color: #ffffff;
     overflow: hidden;
 }
 
-main {
+#main-box {
     position: relative;
-    border-top: 10px solid white;
-    border-left: 10px solid white;
-    
-    .row:last-child {
-        flex-grow: 2;
-    }
+    border-top: 10px solid #17a2b8;
+    border-left: 10px solid #ff6060;
 }
 
-#intro {
-    position: absolute;
-    top:0;
+main {
+    .row:last-child {
+        flex-grow: 0;
+    }
 }
 
 #frame {
@@ -46,22 +43,24 @@ main {
     border-bottom: 10px solid white;
 }
 
-#frame-content-row {
-    position: relative;
-    bottom: 10vw;
-    padding: 20px;
-    z-index: 1;
-    background-color: $body-bg;
-    border: 10px solid white;
-}
+.icon-bar {
+    position: fixed;
+    background-color: white;
+    color: black;
+    right: 0;
+    bottom: 10%;
+    
+    a {
+        display: block;
+        text-align: center;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+        padding: 5px;
+    }
 
-#frame-box {
-    padding: 10px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-#frame-backboard {
-    position: relative;
-
+    a.linkedin {
+        background: #007bb5;
+        color: white;
+    }
 }
