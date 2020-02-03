@@ -12,8 +12,8 @@ $body-color: #ffffff;
 
 #hero {
     position: relative;
-    max-height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: visible;
 }
 
 #main-box {
@@ -32,15 +32,21 @@ main {
     z-index: 1;
     background-color: $body-bg;
     position: relative;
-    /* responsive-width only in chrome for now :(
-    right: unquote('min(50%, 150px)');
     width: 100%;
-    */
-    right: 100px;
-    width: 300px;
     /* todo: only md height: 300px */;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
+}
+
+@media (min-width: 408px) {
+    #frame {
+        right: 100px;
+        width: 300px;
+    }
+}
+
+#profile {
+    border: 7px solid white;
 }
 
 .icon-bar {
