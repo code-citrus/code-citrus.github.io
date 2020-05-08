@@ -4,6 +4,7 @@
   "description": "Portfolio Page",
   "main": "index.js",
   "scripts": {
+    "build": "copyfiles --flat public/index.html public/styles.css dist/ && npx webpack",
     "start": "npx webpack-dev-server --mode development",
     "debug": "node --inspect-brk node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "copyfiles": "^2.2.0",
     "css-loader": "^3.5.2",
     "file-loader": "^6.0.0",
     "inspect-loader": "^1.0.0",
