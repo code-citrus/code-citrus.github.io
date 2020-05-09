@@ -30,8 +30,6 @@ const Sidebar = ({ expandContent }) => {
               <nav>
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
               </nav>
             </div>
             <div className="intro">
