@@ -1,22 +1,23 @@
-#name {
-    display: flex;
-    align-items: flex-end;
+header {
+    font-family: 'Noto Serif', serif;
     text-transform: uppercase;
+    display: grid;
     
-    > nav {
-        order:0;
-        text-align: right;
+    #about {
+        grid-row: 1;
+        grid-column: 1;
     }
 
     > h1 {
-        order:1;
-        text-align: left;
-        padding: 0;
-        margin: 0;
+        grid-row: 1;
+        grid-column: 2;
     }
+
+    #skills {
+        display: flex;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
 }
 
-#job {
-    display: flex;
-    text-transform: uppercase;
-}
