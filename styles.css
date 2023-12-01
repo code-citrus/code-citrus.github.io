@@ -1,43 +1,88 @@
 header {
-    max-width: 800px;
-    margin: 60px auto;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-family: 'Noto Serif', serif;
     text-transform: uppercase;
-    display: grid;
-    gap: 16px;
-    
+
+    li {
+        padding: 0.75rem;
+    }
+
     #name-nav {
-        grid-column: 1;
-        text-align: right;
-        padding-right: 16px;
+        margin-bottom: 1rem;
         border-right: 1px solid black;
+        text-align: right;
     }
 
     #name {
-        grid-row: 1;
-        grid-column: 2;
-        font-size: 96px;
-        letter-spacing: 10px;
-        line-height: 110%;
-        margin: 0;
-    }
-
-    #job {
-        display: flex;
-        grid-row: 2;
-        grid-column: 2;
+        margin: 0.25rem;
+        text-align: center;
+        font-size: 3em;
+        letter-spacing: 5px;;
+        line-height: 100%;
     }
 
     #role {
-        margin: 0 0 0 8px;
-        letter-spacing: 5px;
+        margin: 0.25rem;
+        text-align: center;
+        font-size: 1.25em;
+        letter-spacing: 2.5px;
     }
 
     #role-nav {
-        margin-left: 16px;
-        padding-left: 16px;
+        width: 50%;
+        margin: 0 auto;
         border-left: 1px solid black;
     }
 
 }
+
+@media screen and (min-width: 900px) {
+    header {
+        max-width: 800px;
+        margin: 60px auto;
+        font-family: 'Noto Serif', serif;
+        text-transform: uppercase;
+        display: grid;
+        gap: 16px;
+        
+        #name-nav {
+            grid-column: 1;
+            text-align: right;
+            padding-right: 16px;
+            border-right: 1px solid black;
+        }
+    
+        #name {
+            grid-row: 1;
+            grid-column: 2;
+            font-size: 96px;
+            letter-spacing: 10px;
+            line-height: 110%;
+            margin: 0;
+        }
+    
+        #job {
+            display: flex;
+            grid-row: 2;
+            grid-column: 2;
+        }
+    
+        #role {
+            margin: 0 0 0 8px;
+            letter-spacing: 5px;
+        }
+    
+        #role-nav {
+            margin-left: 16px;
+            padding-left: 16px;
+            border-left: 1px solid black;
+        }
+    
+    }
+}
+
 
