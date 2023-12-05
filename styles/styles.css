@@ -3,9 +3,12 @@
 .txt-l { text-align: left; }
 .txt-r { text-align: right; }
 
-/**
-  * MOBILE
-  */
+/** === MOBILE === */
+
+#hero-page {
+    height: 80vh;
+}
+
 header {
     text-transform: uppercase;
 
@@ -24,9 +27,8 @@ header {
         text-decoration: underline;
     }
 
-    /* Mobile: Use flexbox to center hero */
+    /* Center hero in width */
     margin-top: 20vh;
-    margin-bottom: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,6 +64,15 @@ header {
             letter-spacing: 2.5px;
         }
     }
+}
+
+#hero-page::after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 100vw;
+    height: 150px;
+    background-image: url('/img/landscape.svg');
 }
 
 main {
@@ -152,7 +163,7 @@ main {
 
     main {
         & section {
-            
+
         }
     }
 }
