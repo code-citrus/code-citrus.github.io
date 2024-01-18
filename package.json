@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
+    "dev:tailwind": "tailwindcss -i ./styles/tw.css -o ./_site/styles/tailwind.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gautham",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.4.1"
   }
 }

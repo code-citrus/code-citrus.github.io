@@ -1,57 +1,26 @@
-.br { border-right: 1px solid black; }
-.bl { border-left: 1px solid black; }
-.txt-l { text-align: left; }
-.txt-r { text-align: right; }
+html, body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
 
-/** === MOBILE === */
 body {
-    background-color: #101010;
+    background-color: #000C1B;
     color: #d8d8d8;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #hero-page {
-    height: 80vh;
+    height: 100vh;
+    background: linear-gradient(180deg, black 0%, #001126 43%);
 }
 
-header {
-    text-transform: uppercase;
+#hero-content {
+    padding-top: 20vh;
 
-    & ul {
-        list-style: none;
-        border: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    & li {
-        padding: 0.75rem;
-    }
-
-    & li:hover {
-        text-decoration: underline;
-    }
-
-    /* Center hero in width */
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    /* Hero is a column flexbox containing
-     * the name/role in the center with 2 navs on
-     * top and bottom. The width should be established
-     * by the name header and the top/btm navs should
-     * align w. the right/left of the name header.
-     */
     .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
 
         & nav {
             width: 70%;
-            margin: 1.5rem auto;
         }
 
         #name {
@@ -63,10 +32,7 @@ header {
         }
 
         #role {
-            margin: 0.25rem 0.25rem 1rem 0.25rem;
-            text-align: center;
             font-size: 1.25em;
-            letter-spacing: 2.5px;
         }
     }
 }
@@ -76,13 +42,30 @@ header {
     bottom: 0;
     content: '';
     width: 100vw;
-    height: 150px;
+    height: 185px;
     background-image: url('/img/landscape.svg');
 }
 
 main {
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    font-family: 'Caveat';
+
+    & section.intro::before {
+        display: block;
+        content: '';
+        background: linear-gradient(180deg, #063531 10%, #085E5C 100%);
+        width: 100%;
+        height: 125px;
+    }
+
+    & section.intro::after {
+        display: block;
+        content: '';
+        background: linear-gradient(180deg, #085E5C 0%, #000C1B 100%);
+        width: 100%;
+        height: 125px;
+    }
 
     & section {
         & article {      
@@ -92,44 +75,28 @@ main {
 
             > h1 {
                 padding: 2rem 0;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
                 font-size: 2rem;
                 letter-spacing: 1.5px;
                 text-align: center;
                 text-transform: uppercase;
             }
 
+            p { 
+                margin: 1rem;
+                text-align: center;
+            }
+
         }
     }
 }
 
-@media screen and (min-width: 900px) {
-    header {
-        display: flex; 
-        margin-bottom: 3rem;
-
-        .hero {
-            display: grid;
-            gap: 16px;
-            flex-grow: 1;
-            max-width: 1200px;
-            
+@media screen and (min-width: 768px) {
+    #hero-content {
+        .hero {            
             & nav {
                 width: 100%;
-            }
-
-            #name-nav {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-  
-                >ul {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-items: center;
-                }
             }
         
             #name {
@@ -143,31 +110,35 @@ main {
             }
         
             #job {
-                display: flex;
-                justify-content: start;
                 grid-row: 2;
                 grid-column: 2;
             }
         
-            #role {
-                margin: 0 0 0 8px;
-                letter-spacing: 5px;
-                flex-shrink: 0;
-            }
-        
             #role-nav {
-                margin: 0;
-                flex-shrink: 1;
-                margin-left: 16px;
-                padding-left: 16px;
-                border-left: 1px solid black;
+                border-left: 1px solid rgba(255, 255, 255, 0.126);
             }
         
         }
     }
+}
 
-    main {
+.card {
+    padding: 1rem;
+    margin-top: 2rem;
+    
+    > h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    > .intro {
+        font-style: italic;
     }
 }
 
+.circle {
+    background: radial-gradient(#085E5C, #000C1B);
+}
 

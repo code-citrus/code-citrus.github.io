@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
 
     // Copy styles to dir.output. These are brought in
-    // by teh base template.
+    // by the base template.
     eleventyConfig.addPassthroughCopy('styles/*.css');
 
     // Copy "img/" to "_site/img"

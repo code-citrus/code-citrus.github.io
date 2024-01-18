@@ -3,49 +3,61 @@ layout: "base.hbs"
 title: Gautham
 ---
 <div id="hero-page">
-    <header>
-        <div class="hero">
-            <nav id="name-nav" class="br txt-r">
-                <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Contact</li>
+    <div id="hero-content" class="flex flex-row justify-center uppercase">
+        <div class="hero flex flex-col items-stretch md:grid md:gap-4 md:grow md:max-w-screen-xl">
+            <nav id="name-nav" class="my-6 mx-auto border-r border-r-white text-right">
+                <ul class="md:flex md:flex-row md:justify-around md:items-center">
+                    <li class="hover:underline p-3"><a href="#about">About</a></li>
+                    <li class="hover:underline p-3"><a href="#skills">Skills</a></li>
+                    <li class="hover:underline p-3"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <h1 id="name">Gautham</h1>
-            <section id="job">
-                <h2 id="role">Fullstack Engineer</h2>
-                <nav id="role-nav" class="bl txt-l">
+            <h1 id="name" class="m-1 text-center">Gautham</h1>
+            <section id="job" class="md:flex md:justify-start">
+                <h2 id="role" class="mx-1 mt-1 mb-4 text-center tracking-[2.5px] md:m-0 md:ml-2 md:tracking-[.3125rem] md:shrink-0">Fullstack Engineer</h2>
+                <nav id="role-nav" class="my-6 mx-auto border-l border-l-white text-left md:m-0 md:ml-4 md:pl-4">
                     <ul>
-                        <li>AWS</li>
-                        <li>Node</li>
-                        <li>Java</li>
-                        <li>React</li>
+                        <li class="hover:underline p-3 pt-0"><a href="#skills">AWS</a></li>
+                        <li class="hover:underline p-3"><a href="#skills">Node</a></li>
+                        <li class="hover:underline p-3"><a href="#skills">Java</a></li>
+                        <li class="hover:underline p-3"><a href="#skills">React</a></li>
                     </ul>
                 </nav>
             </section>
         </div>
-    </header>
+    </div>
 </div>
-<main>
-    <section>
-        <article id="about">
-            <h1>About</h1>
-            <div class="content">
-            {{> about }}
-            </div>
+<main class="caveat">
+    <section class="intro bg-evergreen-base">
+        <article class="text-center text-4xl py-9">
+            Your friendly neighborhood fullstack engineer.
         </article>
     </section>
     <section>
-        <article>
+        <article id="about">
+            <p class="text-center text-3xl">
+            Over 10 years of industry experience with websites, cloud architectures, and
+            APIs using <strong>Java</strong>, <strong>Javascript</strong>, <strong>Node</strong>,
+            <strong>AWS</strong>, and <strong>React</strong>
+            </p>
+            <div class="flex flex-col justify-center items-center mx-auto my-12 py-12 w-44 h-44 rounded-full circle">
+               <img class="border-2 rounded-full w-36 h-36" src="/img/headshot.jpg">
+            </div>
+            <p class="text-center text-2xl">
+            I pride myself on building quality products through a human centered approach built-on understanding, trust, and respect for your time and money. Lets get connected!
+            </p>
+        </article>
+    </section>
+    <section>
+        <article id="skills">
             <h1>Skills</h1>
             <div class="content">
                 <ul class="reset">
                     <li>
                         <div class="card">
                             <h3>Cloud Solutions</h3>
-                            <p>Resilient and scale-able cloud solutions in AWS</p>
-                            <ul>
+                            <p class="intro">Resilient and scale-able cloud solutions in AWS</p>
+                            <ul class="list-disc">
                                 <li>Scalable storage with AWS S3 and DynamoDB</li>
                                 <li>Deploy microservices using ECS/EC2</li>
                                 <li>Deploy IaaC using CloudFromation or Terraform</li>
@@ -56,8 +68,8 @@ title: Gautham
                     <li>
                         <div class="card">
                             <h3>API Design</h3>
-                            <p>User friendly, secure, and maintainable APIs built using Java or Node</p>
-                            <ul>
+                            <p class="intro">User friendly, secure, and maintainable APIs built using Java or Node</p>
+                            <ul class="list-disc">
                                 <li>OAuth and Social Sign In</li>
                                 <li>RESTful APIs</li>
                                 <li>Java Spring</li>
@@ -67,7 +79,12 @@ title: Gautham
                     <li>
                         <div class="card">
                             <h3>Web</h3>
-                            <p>Elegant and reponsive pages and apps using React, HTML, and CSS</p>
+                            <p class="intro">Elegant and reponsive pages and apps using React, HTML, and CSS</p>
+                            <ul class="list-disc">
+                                <li>Dynamic or static websites</li>
+                                <li>Interactive Web Apps</li>
+                                <li>Brand or marketing pages</li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -75,10 +92,18 @@ title: Gautham
         </article>
     </section>
     <section>
-        <article id="Contact">
+        <article id="contact">
             <h1>Contact</h1>
-            <div class="content">
-                TODO
+            <div class="content text-center text-6xl tracking-[.25em] p-6">
+                <a href="https://linkedin.com/in/gauthamg-engineer" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:gautham.g+weblead@live.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-upwork"></i>
+                </a>
             </div>
         </article>
     </section>
