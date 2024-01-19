@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "dev:tailwind": "tailwindcss -i ./styles/tw.css -o ./_site/styles/tailwind.css --watch",
+    "build": "tailwindcss -i ./styles/tw.css -o ./_site/styles/tailwind.css --minify && eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gautham",
