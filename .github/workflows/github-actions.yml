@@ -22,11 +22,10 @@ jobs:
         with:
           node-version: 'latest'
           cache: npm
+      - run: npm ci && npm run build
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: Build with 11ty
-        run: npm run build
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
