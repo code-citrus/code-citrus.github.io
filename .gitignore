@@ -1,2 +1,5 @@
-node_modules/
-dist/
+# NPM
+node_modules
+
+# Eleventy
+_site
