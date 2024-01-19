@@ -26,7 +26,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with 11ty
-        run: npx @11ty/eleventy
+        run: npm run build
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
